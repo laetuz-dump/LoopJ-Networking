@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         getHttp()
+        binding.btnAllQuotes.setOnClickListener { getHttp() }
     }
 
     //Step 4: Make a new function for LoopJ getting the web api
