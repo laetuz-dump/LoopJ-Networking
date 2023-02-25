@@ -1,6 +1,5 @@
 package com.neotica.loopjnetworking
 
-import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -80,7 +79,7 @@ class MainActivity : AppCompatActivity() {
             ) {
                 //Step 9: Make the progressbar invisible onFailure
                 binding.progressBar.visibility = View.INVISIBLE
-                //Step 15: Make the error Message variable
+                //Step 15: Define the error Message variable
                 val errorMessage = when(statusCode){
                     401 -> "$statusCode : Bad Request"
                     403 -> "$statusCode : Forbidden"
